@@ -1,7 +1,7 @@
 # Database Modeling
 
 ### Data Modelling
-![](https://github.com/shamy1st/sql/blob/main/images/data-modeling.png)
+![](https://github.com/shamy1st/database-modeling/blob/main/images/data-modeling.png)
 
 * Conceptual Models
 * Logical Models
