@@ -13,7 +13,11 @@ detailed ERD with data types (abstract) and more relation details.
 
 ![](https://github.com/shamy1st/database-modeling/blob/main/images/logical-model-erd.png)
 
-* Physical Models
+### Physical Models
+the implementation of the logical model
+
+![](https://github.com/shamy1st/database-modeling/blob/main/images/physical-model-erd.png)
+
 * Primary Keys
 * Foreign Keys
 * Foreign Key Constraints
