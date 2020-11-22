@@ -1,5 +1,8 @@
 # Database Modeling
-* Data Modelling
+
+### Data Modelling
+![](https://github.com/shamy1st/sql/blob/main/images/data-modeling.png)
+
 * Conceptual Models
 * Logical Models
 * Physical Models
