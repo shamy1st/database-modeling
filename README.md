@@ -8,8 +8,11 @@ represents the entities and their relationships.
 
 ![](https://github.com/shamy1st/database-modeling/blob/main/images/conceptual-model-erd.png)
 
+### Logical Models
+detailed ERD with data types (abstract) and more relation details.
 
-* Logical Models
+![](https://github.com/shamy1st/database-modeling/blob/main/images/logical-model-erd.png)
+
 * Physical Models
 * Primary Keys
 * Foreign Keys
