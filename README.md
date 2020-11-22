@@ -3,23 +3,21 @@
 ### Data Modelling
 ![](https://github.com/shamy1st/database-modeling/blob/main/images/data-modeling.png)
 
-### Conceptual Models
+### Conceptual Model
 represents the entities and their relationships.
 
 ![](https://github.com/shamy1st/database-modeling/blob/main/images/conceptual-model-erd.png)
 
-### Logical Models
+### Logical Model
 detailed ERD with data types (abstract) and more relation details.
 
 ![](https://github.com/shamy1st/database-modeling/blob/main/images/logical-model-erd.png)
 
-### Physical Models
+### Physical Model
 the implementation of the logical model
 
 ![](https://github.com/shamy1st/database-modeling/blob/main/images/physical-model-erd.png)
 
-* Primary Keys
-* Foreign Keys
 * Foreign Key Constraints
 * Normalization
 * 1NF- First Normal Form
