@@ -3,7 +3,10 @@
 ### Data Modelling
 ![](https://github.com/shamy1st/database-modeling/blob/main/images/data-modeling.png)
 
-* Conceptual Models
+### Conceptual Models
+represents the entities and their relationships.
+![](https://github.com/shamy1st/database-modeling/blob/main/images/conceptual-model-erd.png)
+
 * Logical Models
 * Physical Models
 * Primary Keys
