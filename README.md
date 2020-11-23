@@ -18,17 +18,27 @@ the implementation of the logical model
 
 ![](https://github.com/shamy1st/database-modeling/blob/main/images/physical-model-erd.png)
 
-* Foreign Key Constraints
-* Normalization
-* 1NF- First Normal Form
-* Link Tables
-* 2NF- Second Normal Form
-* 3NF- Third Normal Form
-* My Pragmatic Advice
-* Don't Model the Universe
-* Forward Engineering a Model
-* Synchronizing a Model with a Database
-* Reverse Engineering a Database
+### Normalization
+
+Normalization is the process of organizing the data in the database.
+
+Normalization is used to minimize the redundancy from a relation or set of relations.
+
+### 1NF- First Normal Form
+Each cell should have a single value and we cannot have repeated columns.
+
+tags in table courses violate this rule.
+
+![](https://github.com/shamy1st/database-modeling/blob/main/images/1nf-erd.png)
+
+### Link Tables
+### 2NF- Second Normal Form
+### 3NF- Third Normal Form
+### My Pragmatic Advice
+### Don't Model the Universe
+### Forward Engineering a Model
+### Synchronizing a Model with a Database
+### Reverse Engineering a Database
 * Project- Flight Booking System
 * Solution- Conceptual Model
 * Solution- Logical Model
