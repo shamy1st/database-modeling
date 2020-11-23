@@ -27,12 +27,17 @@ Normalization is used to minimize the redundancy from a relation or set of relat
 ### 1NF- First Normal Form
 Each cell should have a single value and we cannot have repeated columns.
 
-tags in table courses violate this rule.
+**tags** in table courses violate 1NF rule.
 
 ![](https://github.com/shamy1st/database-modeling/blob/main/images/1nf-erd.png)
 
-### Link Tables
 ### 2NF- Second Normal Form
+Every table should describe one entity, and every column in that table should describe that entity.
+
+**instructor** in table courses violate 2NF rule.
+
+![](https://github.com/shamy1st/database-modeling/blob/main/images/2nf-erd.png)
+
 ### 3NF- Third Normal Form
 ### My Pragmatic Advice
 ### Don't Model the Universe
