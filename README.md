@@ -46,16 +46,72 @@ in the following example balance in invoices table can be calculated from (invoi
 ![](https://github.com/shamy1st/database-modeling/blob/main/images/3nf-example1.png)
 ![](https://github.com/shamy1st/database-modeling/blob/main/images/3nf-example2.png)
 
-* Project- Flight Booking System
-* Solution- Conceptual Model
-* Solution- Logical Model
-* Project - Video Rental Application
-* Solution- Conceptual Model
-* Solution- Logical Model
-* Creating and Dropping Databases
-* Creating Tables
-* Altering Tables
-* Creating Relationships
-* Altering Primary and Foreign Key Constraints
-* Character Sets and Collations
-* Storage Engines
+### Create/Drop Database
+
+    DROP DATABASE IF EXISTS sql_store;
+    CREATE DATABASE IF NOT EXISTS sql_store;
+
+### Create/Drop Table
+
+    DROP TABLE IF EXISTS customers;
+    CREATE TABLE IF NOT EXISTS customers (
+        customer_id INT PRIMARY KEY AUTO_INCREMENT,
+        first_name  VARCHAR(50) NOT NULL,
+        birth_date  DATE DEFAULT NULL,
+        points      INT(11) NOT NULL DEFAULT '0'
+    );
+
+### Alter Table
+
+    ALTER TABLE customers
+    ADD last_name VARCHAR(50) NOT NULL AFTER first_name,
+    MODIFY COLUMN first_name VARCHAR(55) DEFAULT '',
+    DROP COLUMN points;
+
+### Create Relationships
+
+    DROP TABLE IF EXISTS orders;
+    CREATE TABLE IF NOT EXISTS orders (
+        order_id    INT PRIMARY KEY AUTO_INCREMENT,
+        customer_id INT NOT NULL,
+        FOREIGN KEY fk_orders_customers (customer_id)
+            REFERENCES customers(customer_id)
+            ON UPDATE CASCADE
+            ON DELETE NO ACTION
+    );
+
+### Alter Primary and Foreign Key Constraints
+
+    ALTER TABLE orders
+    DROP PRIMARY KEY,
+    ADD PRIMARY KEY (order_id);
+
+    ALTER TABLE orders
+    DROP FOREIGN KEY fk_orders_customers,
+    ADD FOREIGN KEY fk_orders_customers (customer_id)
+        REFERENCES customers(customer_id)
+        ON UPDATE CASCADE
+        ON DELETE NO ACTION;
+
+### Character Sets and Collations
+
+* **database level**
+
+      CREATE DATABASE IF NOT EXISTS sql_store CHARACTER SET latin1; -- 1 char -> 1 byte  (support latin languages)
+      CREATE DATABASE IF NOT EXISTS sql_store CHARACTER SET utf8;   -- 1 char -> 3 bytes (support most languages including asian)
+
+* **table level**
+
+      CREATE TABLE IF NOT EXISTS customers (
+      )
+      CHARACTER SET latin1;
+
+* **column level**
+
+      CREATE TABLE IF NOT EXISTS customers (
+          ...
+          first_name  CHARACTER SET latin1 VARCHAR(50) NOT NULL,
+          ...
+      );
+
+### Storage Engines
