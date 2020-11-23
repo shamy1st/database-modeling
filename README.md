@@ -46,11 +46,6 @@ in the following example balance in invoices table can be calculated from (invoi
 ![](https://github.com/shamy1st/database-modeling/blob/main/images/3nf-example1.png)
 ![](https://github.com/shamy1st/database-modeling/blob/main/images/3nf-example2.png)
 
-### My Pragmatic Advice
-### Don't Model the Universe
-### Forward Engineering a Model
-### Synchronizing a Model with a Database
-### Reverse Engineering a Database
 * Project- Flight Booking System
 * Solution- Conceptual Model
 * Solution- Logical Model
