@@ -39,6 +39,13 @@ Every table should describe one entity, and every column in that table should de
 ![](https://github.com/shamy1st/database-modeling/blob/main/images/2nf-erd.png)
 
 ### 3NF- Third Normal Form
+A column in a table should not be derived from another columns.
+
+in the following example balance in invoices table can be calculated from (invoice_total - payment_total), then it should be deleted from this table.
+
+![](https://github.com/shamy1st/database-modeling/blob/main/images/3nf-example1.png)
+![](https://github.com/shamy1st/database-modeling/blob/main/images/3nf-example2.png)
+
 ### My Pragmatic Advice
 ### Don't Model the Universe
 ### Forward Engineering a Model
