@@ -95,6 +95,8 @@ in the following example balance in invoices table can be calculated from (invoi
 
 ### Character Sets and Collations
 
+    SHOW CHARSET;
+
 * **database level**
 
       CREATE DATABASE IF NOT EXISTS sql_store CHARACTER SET latin1; -- 1 char -> 1 byte  (support latin languages)
@@ -103,6 +105,7 @@ in the following example balance in invoices table can be calculated from (invoi
 * **table level**
 
       CREATE TABLE IF NOT EXISTS customers (
+          ...
       )
       CHARACTER SET latin1;
 
@@ -115,3 +118,9 @@ in the following example balance in invoices table can be calculated from (invoi
       );
 
 ### Storage Engines
+
+determine how the data is stored and the features supported to us:
+
+    SHOW ENGINES;
+
+default engine is **InnoDB** supports (Transactions, XA, Savepoints).
