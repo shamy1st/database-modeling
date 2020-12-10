@@ -20,9 +20,7 @@ the implementation of the logical model
 
 ### Normalization
 
-Normalization is the process of organizing the data in the database.
-
-Normalization is used to minimize the redundancy from a relation or set of relations.
+**Normalization** minimizing redundant data from database.
 
 ### 1NF- First Normal Form
 Each cell should have a single value and we cannot have repeated columns.
